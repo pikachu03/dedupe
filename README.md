@@ -1,4 +1,4 @@
-# dedupe
+# Dedupe
 A python script to identify duplicate files in a given directory
 
 ## To Use
