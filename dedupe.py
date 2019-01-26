@@ -75,6 +75,8 @@ def dedupe(p1, p2=''):
                     if not sub_b[i][j][2] in seens:
                         seens.append(sub_b[i][j][2])
                     else:
+                        # UNCOMMENT THIS CODE IF YOU WANT DEDUPE TO MOVE DUPLICATE FILES TO p2
+                        # IT WILL LEAVE ONE COPY OF THE FILE IN ITS ORIGINAL LOCATION
                         # new_name_components = sub_b[i][j][1].split("/")
                         # new_name = ''
                         # _, ext = os.path.splitext(sub_b[i][j][1])
@@ -104,4 +106,8 @@ def dedupe(p1, p2=''):
 
 
 dedupe(input("Enter the path of the folder you want to dedupe."
-             "Note, the file path must be surrounded by single of double quotes. \n"))
+             "Note, the file path must be surrounded by single of double quotes. \n")
+       # UNCOMMENT THIS CODE IF YOU WANT DEDUPE TO MOVE DUPLICATE FILES TO p2
+       # input("Enter the path of the folder you want duplicates to be moved to."
+       )
+
