@@ -27,7 +27,6 @@ def dedupe(p1, p2=''):
         for file in os.listdir(p):
             if not file[0] is '.':
                 if os.path.isdir(p + "/" + file):
-                    _, ext = os.path.splitext()
                     u(p + "/" + file)
                 if os.path.isfile(p + "/" + file):
                     file_path = p + "/" + file
@@ -43,7 +42,7 @@ def dedupe(p1, p2=''):
         for i in range(len(universe)):
             if i == 0:
                 sub_a.append([universe[i]])
-            if not i == 0:                                                                                                               
+            if not i == 0:
                 if universe[i][0] > universe[i-1][0]:              
                     sub_a.append([universe[i]])
                 if universe[i][0] == universe[i-1][0]:
