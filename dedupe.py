@@ -48,7 +48,6 @@ def dedupe(p1, p2=''):
                     sub_a.append([universe[i]])
                 if universe[i][0] == universe[i-1][0]:
                     sub_a[len(sub_a)-1].append(universe[i])
-        # print(sub_a)
     a()
 
     def b():
