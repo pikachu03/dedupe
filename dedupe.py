@@ -64,14 +64,14 @@ def dedupe(p1, p2=''):
     sub_b = b()
 
     def move_dupes():
-        seens = []
+        seen_files = []
         dupes = []
         outputs = open("Output.txt", "w")
         for i in range(len(sub_b)):
             for j in range(len(sub_b[i])):
                 if len(sub_b[i]) > 1:
-                    if not sub_b[i][j][2] in seens:
-                        seens.append(sub_b[i][j][2])
+                    if not sub_b[i][j][2] in seen_files:
+                        seen_files.append(sub_b[i][j][2])
                     else:
                         # UNCOMMENT THIS CODE IF YOU WANT DEDUPE TO MOVE DUPLICATE FILES TO p2
                         # IT WILL LEAVE ONE COPY OF THE FILE IN ITS ORIGINAL LOCATION
