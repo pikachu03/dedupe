@@ -108,4 +108,3 @@ dedupe(input("Enter the path of the folder you want to dedupe."
        # UNCOMMENT THIS CODE IF YOU WANT DEDUPE TO MOVE DUPLICATE FILES TO p2
        # input("Enter the path of the folder you want duplicates to be moved to."
        )
-
