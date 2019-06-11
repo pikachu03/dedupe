@@ -2,6 +2,7 @@ import os
 import hashlib
 import operator
 
+
 def md5(fname):
     hash_md5 = hashlib.md5()
     with open(fname) as f:
@@ -50,7 +51,7 @@ def dedupe(p1, p2=''):
 
     def b():
         print("Calculating hashes...\n")
-        temp = sub_am
+        temp = sub_a
         for i in range(len(sub_a)):                          
             for j in range(len(sub_a[i])):
                 if not len(sub_a[i]) == 1:
