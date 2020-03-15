@@ -2,7 +2,7 @@
 A python script to identify duplicate files in a given directory
 
 ## To Use
-Download or clone the repository. Then, in your terminal, cd to the directory and run "python dedupe.py"
+Download or clone the repository. Then, direct your terminal to the downloaded/cloned directory and run as you would any other python script (`python dedupe.py`)
 
 Please note: I made this program to run on MacOS. It will need to be modified to work on windows and may need to be modified to work with linux.
 
