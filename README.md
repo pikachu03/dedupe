@@ -1,9 +1,11 @@
 # Dedupe
 A python script to identify duplicate files in a given directory
 
+Please note: this library is made to be used on macos and currently only works with python 2.x.
+
 ## To Use
-Download or clone the repository. Then, direct your terminal to the downloaded/cloned directory and run as you would any other python script (`python dedupe.py`)
+### Dedupe as a Library
+If you would like to use dedupe as a library in your own code, copy `dedupe-v2.py` to the directory you would like to use it in and add the line `import dedupe-v2` to the beginning of your program.
 
-Please note: I made this program to run on MacOS. It will need to be modified to work on windows and may need to be modified to work with linux.
-
-This program was written using python 2.7. Minor changes may be needed to work with newever versions of python.
+### Dedupe From the Command Line
+If you would like to use dedupe as a utility from your command line, clone or download the repository and direct your terminal to the dedupe directory. There, run `python dedupe-cli.py`. You will be prompted to enter the file path to the directory you want to dedupe. **You must enter the complete file path. Using a tilde will NOT work.** After submitting the file path, dedupe will print out it's results and provide a detailed list of the duplicates in a file that will be specified in the output.

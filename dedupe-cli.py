@@ -101,6 +101,6 @@ def dedupe_helper(path):
     give_results()
 
 
-path = input("enter the full path of the direcory you want to dedupe surrounded by single quotes")
+path = input("enter the full path of the direcory you want to dedupe surrounded by single quotes: ")
 dedupeObj = DedupeObj(path)
 dedupeObj.dedupe()
